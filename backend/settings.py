@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'accounts',
     'core',
     'crm',
+    # blog
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +66,10 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['core/templates/home'],
+        'DIRS': [
+            'core/templates/home', 
+            'blog/templates/blog',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
