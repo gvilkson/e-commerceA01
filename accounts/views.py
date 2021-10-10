@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Read https://github.com/rg3915/django-auth-tutorial
+def login(request):
+    return render(request, 'registration/login.html', {})
+
+def logout(request):
+    return render(request, 'registration/logout.html', {})
