@@ -68,9 +68,14 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'core/templates/home', 
+            # App home ------------------------
+            'core/templates/home',
+            'core/templates/contact',
+            # App shop ------------------------
             'shop/templates/shop',
+            # App blog ------------------------
             'blog/templates/blog',
+            # App accounts --------------------
             'accounts/templates/registration',
         ],
         'APP_DIRS': True,

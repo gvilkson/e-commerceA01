@@ -7,4 +7,5 @@ app_name = 'core'
 
 urlpatterns = [
     path('', v.index, name='index'),
+    path('contact/', v.contact, name='contact'),
 ]
