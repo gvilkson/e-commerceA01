@@ -45,9 +45,9 @@ INSTALLED_APPS = [
     'django_extensions',
     # my apps
     'accounts',
+    'checkout',
     'core',
     'crm',
-    # blog
     'shop',
     'blog',
 ]
@@ -75,6 +75,8 @@ TEMPLATES = [
             'shop/templates/shop',
             # App blog ------------------------
             'blog/templates/blog',
+            # App checkout --------------------
+            'checkout/templates/checkout',
             # App accounts --------------------
             'accounts/templates/registration',
         ],
