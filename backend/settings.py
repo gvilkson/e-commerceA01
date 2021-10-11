@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'core',
     'crm',
     # blog
+    'shop',
     'blog',
 ]
 
@@ -68,7 +69,9 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'core/templates/home', 
+            'shop/templates/shop',
             'blog/templates/blog',
+            'accounts/templates/registration',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -139,4 +142,4 @@ STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
 
 LOGIN_URL = '/admin/login/'
 LOGIN_REDIRECT_URL = 'core:index'
-LOGOUT_REDIRECT_URL = 'core:index'
+LOGOUT_REDIRECT_URL = 'logout'
